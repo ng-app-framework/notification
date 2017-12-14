@@ -1,6 +1,7 @@
 import {Injectable} from "@angular/core";
 import {Endpoint} from "@ng-app-framework/api";
 import {OAuthEndpointCaller} from "@ng-app-framework/oauth";
+import {Observable} from "rxjs/Rx";
 
 @Injectable()
 export class MarkNotificationAsReadEndpoint extends Endpoint {
@@ -11,7 +12,7 @@ export class MarkNotificationAsReadEndpoint extends Endpoint {
         super(caller);
     }
 
-    post(id: number) {
+    post(id: number): Observable<any> {
         return this.request('post', {notificationIds: [id]});
     }
 }

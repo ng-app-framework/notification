@@ -1,3 +1,5 @@
+import {Observable} from "rxjs/Rx";
+import {ParsedNotificationStructure} from "../Structure/ParsedNotificationStructure";
 import {MarkNotificationAsReadEndpoint} from "../Endpoint/MarkNotificationAsReadEndpoint";
 import {NotificationsEndpoint} from "../Endpoint/NotificationsEndpoint";
 import {Injectable} from "@angular/core";
@@ -11,11 +13,11 @@ export class NotificationApi {
 
     }
 
-    getUnread() {
+    getUnread(): Observable<ParsedNotificationStructure> {
         return this.getUnreadEndpoint.get();
     }
 
-    markAsRead(id:number) {
+    markAsRead(id: number): Observable<any> {
         return this.markReadEndpoint.post(id);
     }
 }
