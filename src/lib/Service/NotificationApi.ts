@@ -1,15 +1,17 @@
-import {Observable} from "rxjs/Rx";
-import {ParsedNotificationStructure} from "../Structure/ParsedNotificationStructure";
+import {Observable}                     from "rxjs/Observable";
+import {ParsedNotificationStructure}    from "../Structure/ParsedNotificationStructure";
 import {MarkNotificationAsReadEndpoint} from "../Endpoint/MarkNotificationAsReadEndpoint";
-import {NotificationsEndpoint} from "../Endpoint/NotificationsEndpoint";
-import {Injectable} from "@angular/core";
+import {NotificationsEndpoint}          from "../Endpoint/NotificationsEndpoint";
+import {Injectable}                     from "@angular/core";
 
 @Injectable()
 export class NotificationApi {
 
 
-    constructor(private getUnreadEndpoint: NotificationsEndpoint,
-                private markReadEndpoint: MarkNotificationAsReadEndpoint) {
+    constructor(
+        private getUnreadEndpoint: NotificationsEndpoint,
+        private markReadEndpoint: MarkNotificationAsReadEndpoint
+    ) {
 
     }
 

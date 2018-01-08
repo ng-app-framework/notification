@@ -1,5 +1,5 @@
 import {ToastRef} from "ngx-toastr";
-import {Observable} from "rxjs/Rx";
+import {Observable} from "rxjs/Observable";
 
 
 export interface ActiveToast {

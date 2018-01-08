@@ -1,12 +1,12 @@
 import {Injectable} from "@angular/core";
 import {Endpoint} from "@ng-app-framework/api";
 import {OAuthEndpointCaller} from "@ng-app-framework/oauth";
-import {Observable} from "rxjs/Rx";
+import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class MarkNotificationAsReadEndpoint extends Endpoint {
 
-    path: string = 'api/notification/read';
+    path: string = 'notification/read';
 
     constructor(public caller: OAuthEndpointCaller) {
         super(caller);

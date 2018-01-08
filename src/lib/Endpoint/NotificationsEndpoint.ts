@@ -1,19 +1,19 @@
-import {Injectable} from "@angular/core";
+import {Injectable}                  from "@angular/core";
 import {
     NotificationStructure
-} from "../Structure/NotificationStructure";
-import {Observable} from "rxjs/Rx";
+}                                    from "../Structure/NotificationStructure";
+import {Observable}                  from "rxjs/Observable";
 import {ParsedNotificationStructure} from "../Structure/ParsedNotificationStructure";
-import {Value} from "@ng-app-framework/core";
-import {Name} from "@ng-app-framework/validation";
-import {Endpoint} from "@ng-app-framework/api";
-import {OAuthEndpointCaller} from "@ng-app-framework/oauth";
+import {Value}                       from "@ng-app-framework/core";
+import {Name}                        from "@ng-app-framework/validation";
+import {Endpoint}                    from "@ng-app-framework/api";
+import {OAuthEndpointCaller}         from "@ng-app-framework/oauth";
 
 @Injectable()
 @Name('NotificationsEndpoint')
 export class NotificationsEndpoint extends Endpoint {
 
-    path: string = 'api/notification/unread';
+    path: string = 'notification/unread';
 
     constructor(public caller: OAuthEndpointCaller) {
         super(caller);
@@ -21,10 +21,10 @@ export class NotificationsEndpoint extends Endpoint {
 
     get(): Observable<ParsedNotificationStructure> {
         return this.request('get')
-            .map(response => this.transformResponse(response))
-            .flatMap((notifications: any[]) => {
-                return Observable.from(notifications);
-            }).map((notification) => {
+                   .map(response => this.transformResponse(response))
+                   .flatMap((notifications: any[]) => {
+                       return Observable.from(notifications);
+                   }).map((notification) => {
                 let body = {};
                 try {
                     body              = JSON.parse(notification.body);

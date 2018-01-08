@@ -2,7 +2,7 @@ import {EventEmitter, Injectable} from "@angular/core";
 import {ParsedNotificationStructure} from "../Structure/ParsedNotificationStructure";
 import {NotificationAlert} from "./NotificationAlert";
 import {NotificationApi} from "./NotificationApi";
-import {Observable} from 'rxjs/Rx';
+import {Observable} from 'rxjs/Observable';
 import {UnsubscribeAll} from "@ng-app-framework/core";
 
 @Injectable()
