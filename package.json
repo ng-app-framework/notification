@@ -1,6 +1,6 @@
 {
     "name": "@ng-app-framework/notification",
-    "version": "1.1.20",
+    "version": "1.1.21",
     "license": "MIT",
     "keywords": [
         "ng-app",
@@ -61,7 +61,7 @@
             "entryFile": "index.ts",
             "name": "ng-app-notification",
             "externals": {
-                "@angular/core":"angular",
+                "@angular/core": "angular",
                 "rxjs/Rx": "rxjs",
                 "reflect-metadata": "reflect-metadata",
                 "ngx-toastr": "ngx-toastr",
