@@ -16,8 +16,8 @@
     },
     "private": false,
     "dependencies": {
-        "@angular/common": "^5.2.5",
-        "@angular/core": "^5.2.5",
+        "@angular/common": "^5.2.6",
+        "@angular/core": "^5.2.6",
         "@ng-app-framework/alert": "^1.1.17",
         "@ng-app-framework/api": "^1.1.25",
         "@ng-app-framework/core": "^1.1.21",
@@ -27,11 +27,11 @@
         "rxjs": "^5.5.6"
     },
     "devDependencies": {
-        "@angular/cli": "^1.6.8",
-        "@angular/compiler": "^5.2.5",
-        "@angular/compiler-cli": "^5.2.5",
-        "@angular/platform-browser": "^5.2.5",
-        "@angular/platform-browser-dynamic": "^5.2.5",
+        "@angular/cli": "^1.7.1",
+        "@angular/compiler": "^5.2.6",
+        "@angular/compiler-cli": "^5.2.6",
+        "@angular/platform-browser": "^5.2.6",
+        "@angular/platform-browser-dynamic": "^5.2.6",
         "@types/jasmine": "2.5.45",
         "@types/node": "^6.0.101",
         "codelyzer": "^4.1.0",
@@ -51,7 +51,7 @@
         "ng-packagr": "^1.7.0",
         "ts-node": "^1.2.1",
         "tslint": "^5.9.1",
-        "typescript": "^2.7.1",
+        "typescript": "^2.7.2",
         "webpack": "^3.11.0",
         "zone.js": "^0.8.20"
     },
@@ -61,6 +61,7 @@
             "entryFile": "index.ts",
             "name": "ng-app-notification",
             "externals": {
+                "@angular/core":"angular",
                 "rxjs/Rx": "rxjs",
                 "reflect-metadata": "reflect-metadata",
                 "ngx-toastr": "ngx-toastr",

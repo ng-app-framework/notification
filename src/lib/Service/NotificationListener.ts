@@ -3,7 +3,6 @@ import {ParsedNotificationStructure} from "../Structure/ParsedNotificationStruct
 import {NotificationAlert}           from "./NotificationAlert";
 import {NotificationApi}             from "./NotificationApi";
 import {Observable}                  from 'rxjs/Observable';
-import {UnsubscribeAll}              from "@ng-app-framework/core";
 
 @Injectable()
 export class NotificationListener {
@@ -25,7 +24,7 @@ export class NotificationListener {
 
     getNotifications() {
         Observable.interval(this.intervalInMilliseconds)
-                  .takeUntil(UnsubscribeAll.merge(this.stopListening))
+                  .takeUntil(this.stopListening)
                   .flatMap(() => this.getUnread$())
                   .subscribe();
     }
