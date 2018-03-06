@@ -30,5 +30,8 @@ import {NgCoreModule}                   from '@ng-app-framework/core';
 })
 export class NgNotificationModule {
 
+    constructor(notifications: NotificationsEndpoint, markAsRead: MarkNotificationAsReadEndpoint) {
+
+    }
 }
 
