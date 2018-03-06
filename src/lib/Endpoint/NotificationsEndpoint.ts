@@ -1,13 +1,13 @@
-import {Injectable}                  from "@angular/core";
+import {Injectable}                      from "@angular/core";
 import {
     NotificationStructure
-}                                    from "../Structure/NotificationStructure";
-import {Observable}                  from "rxjs/Observable";
-import {ParsedNotificationStructure} from "../Structure/ParsedNotificationStructure";
-import {Value}                       from "@ng-app-framework/core";
-import {Name}                        from "@ng-app-framework/validation";
-import {Endpoint}                    from "@ng-app-framework/api";
-import {OAuthEndpointCaller}         from "@ng-app-framework/oauth";
+}                                        from "../Structure/NotificationStructure";
+import {Observable}                      from "rxjs/Observable";
+import {ParsedNotificationStructure}     from "../Structure/ParsedNotificationStructure";
+import {Value}                           from "@ng-app-framework/core";
+import {Name}                            from "@ng-app-framework/validation";
+import {Endpoint, EndpointDocumentation} from "@ng-app-framework/api";
+import {OAuthEndpointCaller}             from "@ng-app-framework/oauth";
 
 @Injectable()
 @Name('NotificationsEndpoint')
@@ -17,7 +17,7 @@ export class NotificationsEndpoint extends Endpoint {
 
     path: string = 'notification/unread';
 
-    documentation = [
+    documentation: EndpointDocumentation[] = [
         {
             method   : 'get',
             name     : 'get',
