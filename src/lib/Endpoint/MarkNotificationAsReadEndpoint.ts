@@ -6,7 +6,23 @@ import {Observable} from "rxjs/Observable";
 @Injectable()
 export class MarkNotificationAsReadEndpoint extends Endpoint {
 
+    module = 'Notification';
+
     path: string = 'notification/read';
+
+    documentation = [
+        {
+            method: 'post',
+            name: 'post',
+            arguments: [
+                {
+                    name: 'id',
+                    type: 'number',
+                    required: true
+                }
+            ]
+        }
+    ];
 
     constructor(public caller: OAuthEndpointCaller) {
         super(caller);

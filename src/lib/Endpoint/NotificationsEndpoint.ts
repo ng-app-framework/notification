@@ -13,7 +13,17 @@ import {OAuthEndpointCaller}         from "@ng-app-framework/oauth";
 @Name('NotificationsEndpoint')
 export class NotificationsEndpoint extends Endpoint {
 
+    module = 'Notification';
+
     path: string = 'notification/unread';
+
+    documentation = [
+        {
+            method   : 'get',
+            name     : 'get',
+            arguments: []
+        }
+    ];
 
     constructor(public caller: OAuthEndpointCaller) {
         super(caller);
