@@ -21,7 +21,13 @@ export class NotificationsEndpoint extends Endpoint {
         {
             method   : 'get',
             name     : 'get',
-            arguments: []
+            arguments: [],
+            response : [{
+                body             : 'string',
+                id               : 'number',
+                notificationLevel: 'string',
+                title            : 'string'
+            }]
         }
     ];
 
