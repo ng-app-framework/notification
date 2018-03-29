@@ -54,7 +54,7 @@ describe('Module: Notification', () => {
                         done();
                     });
                     expect(() => {
-                        subject.notify(<any>notification);
+                        subject.notify(<any>notification, true);
                     }).not.toThrow();
                 });
 
@@ -67,7 +67,7 @@ describe('Module: Notification', () => {
                         body             : {text: 'content'}
                     };
                     expect(() => {
-                        subject.notify(<any>notification);
+                        subject.notify(<any>notification, true);
                     }).toThrow();
                 })
             });

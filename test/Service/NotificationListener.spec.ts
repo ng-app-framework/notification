@@ -1,5 +1,6 @@
-import {NotificationListener} from "../../src/lib/Service/NotificationListener";
-import {Observable} from "rxjs/Rx";
+import {NotificationListener}        from "../../src/lib/Service/NotificationListener";
+import {Observable}                  from "rxjs/Rx";
+import {NotificationBody}            from "../../src/lib/Structure/NotificationBody";
 import {ParsedNotificationStructure} from "../../src/lib/Structure/ParsedNotificationStructure";
 
 describe('Module: Notification', () => {
@@ -21,6 +22,7 @@ describe('Module: Notification', () => {
                         }
                     }
                 );
+                subject.intervalInMilliseconds = 10;
             });
             afterEach(() => {
                 subject.stopListening.emit();
@@ -28,53 +30,57 @@ describe('Module: Notification', () => {
 
             describe('Method: Get Notifications', () => {
 
-                it('should get unread messages from the endpoint', () => {
+                it('should get unread messages from the endpoint', (done) => {
                     let calledApi         = false;
                     subject.api.getUnread = () => {
                         calledApi = true;
-                        return Observable.from([]);
+
+                        return Observable.from([<ParsedNotificationStructure>{
+                            body             : {},
+                            id               : 1,
+                            notificationLevel: 'success',
+                            title            : 'something'
+                        }]);
                     };
-                    subject.getNotifications();
-                    expect(calledApi).toBeTruthy();
+                    subject.onNotification.takeUntil(subject.stopListening).subscribe(() => {
+                        expect(calledApi).toBeTruthy();
+                        done();
+                    });
+                    subject.getUnread$().subscribe();
                 });
 
-                it('should call the endpoint again after the endpoint is called', () => {
-                    let called                    = false;
-                    subject.api.getUnread         = () => {
+                it('should call the endpoint again after the endpoint is called', (done) => {
+                    let called            = 0;
+                    subject.api.getUnread = () => {
+                        called++;
+                        if (called === 2) {
+                            done();
+                        }
                         return Observable.from([]);
                     };
-                    subject.getNotificationsLater = () => {
-                        called = true;
-                    };
                     subject.getNotifications();
-                    expect(called).toBeTruthy();
                 });
                 it('should wait for the listener to be enabled', () => {
-                    let called                    = false;
-                    let calledApi                 = false;
-                    subject.api.getUnread         = () => {
+                    let calledApi         = false;
+                    subject.api.getUnread = () => {
                         calledApi = true;
                         return Observable.empty();
                     };
-                    subject.getNotificationsLater = () => {
-                        called = true;
-                    };
-                    subject.enabled               = () => false;
+                    subject.enabled       = () => false;
                     subject.getNotifications();
-                    expect(called).toBeTruthy('getLater');
                     expect(calledApi).toBeFalsy('calledApi');
                 });
 
-                it('should still try again after an error', () => {
-                    let called                    = false;
-                    subject.getUnread$            = () => {
+                it('should still try again after an error', (done) => {
+                    let called         = 0;
+                    subject.getUnread$ = () => {
+                        called++;
+                        if (called === 2) {
+                            done();
+                        }
                         return Observable.throw(new Error("Error!"));
                     };
-                    subject.getNotificationsLater = () => {
-                        called = true;
-                    };
                     subject.getNotifications();
-                    expect(called).toBeTruthy();
                 });
             });
             describe('Method: Get Unread', () => {
@@ -97,12 +103,12 @@ describe('Module: Notification', () => {
             describe('Method: Get Notifications Later', () => {
                 it('should wait and execute the getNotifications method', (done) => {
                     let called                     = false;
-                    subject.getNotifications       = () => {
+                    subject.getUnread$             = () => {
                         called = true;
+                        return Observable.from([]);
                     };
-                    subject.intervalInMilliseconds = 10;
-                    subject.getNotificationsLater();
                     expect(called).toBeFalsy();
+                    subject.getNotifications();
                     Observable.interval(subject.intervalInMilliseconds).first().subscribe({
                         complete: () => {
                             expect(called).toBeTruthy();

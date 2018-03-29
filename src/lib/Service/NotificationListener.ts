@@ -9,6 +9,8 @@ export class NotificationListener {
 
     stopListening = new EventEmitter<any>();
 
+    onNotification = new EventEmitter<ParsedNotificationStructure>();
+
     intervalInMilliseconds = 10000;
 
     enabled = () => {
@@ -19,13 +21,14 @@ export class NotificationListener {
         public alert: NotificationAlert,
         public api: NotificationApi
     ) {
-
+        this.onNotification.subscribe((notification) => this.alert.notify(notification));
     }
 
     getNotifications() {
         Observable.interval(this.intervalInMilliseconds)
                   .takeUntil(this.stopListening)
                   .flatMap(() => this.getUnread$())
+                  .catch((err, caught) => caught)
                   .subscribe();
     }
 
@@ -35,7 +38,6 @@ export class NotificationListener {
             return Observable.empty();
         }
         return this.api.getUnread()
-                   .catch(err => Observable.empty())
-                   .do((notification: ParsedNotificationStructure) => this.alert.notify(notification));
+                   .do((notification: ParsedNotificationStructure) => this.onNotification.emit(notification));
     }
 }
