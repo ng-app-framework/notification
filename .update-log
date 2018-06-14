@@ -1,0 +1,818 @@
+--- dependency-level-5/notification: Changing Directories
+--- dependency-level-5/notification: Running npm update --save
+npm ERR! path /Users/justin/.nvm/versions/node/v7.10.0/lib/node_modules/npm/node_modules/pacote/node_modules/make-fetch-happen/node_modules/agentkeepalive/index.js
+npm ERR! code ENFILE
+npm ERR! errno -23
+npm ERR! syscall open
+npm ERR! ENFILE: file table overflow, open '/Users/justin/.nvm/versions/node/v7.10.0/lib/node_modules/npm/node_modules/pacote/node_modules/make-fetch-happen/node_modules/agentkeepalive/index.js'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/justin/.npm/_logs/2017-12-14T15_03_22_631Z-debug.log
+--- dependency-level-5/notification: Done updating npm!
+--- dependency-level-5/notification: Committing files
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+	.update-log
+
+nothing added to commit but untracked files present
+--- dependency-level-5/notification: Updating NPM package
+v1.1.8
+
+> @ng-app-framework/notification@1.1.8 package /Users/justin/Angular/ng-app-framework/dependency-level-5/notification
+> node --max-old-space-size=8192 `which ng-packagr` && cp -r ./public/ ./dist/public
+
+Building Angular library
+Generating bundle for @ng-app-framework/notification
+Cleaning bundle build directory
+Processing assets
+Running ngc
+
+BUILD ERROR
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:1:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:5:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:7:21: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:8:20: Cannot find module '@ng-app-framework/validation'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:9:24: Cannot find module '@ng-app-framework/api'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:10:35: Cannot find module '@ng-app-framework/oauth'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:23:21: Property 'request' does not exist on type 'NotificationsEndpoint'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Structure/ActiveToast.ts:1:24: Cannot find module 'ngx-toastr'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Structure/ActiveToast.ts:2:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationFormatter.ts:2:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationFormatter.ts:3:34: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:1:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:2:24: Cannot find module '@ng-app-framework/api'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:3:35: Cannot find module '@ng-app-framework/oauth'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:4:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:16:21: Property 'request' does not exist on type 'MarkNotificationAsReadEndpoint'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationApi.ts:1:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationApi.ts:5:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationAlert.ts:1:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationAlert.ts:2:26: Cannot find module '@ng-app-framework/alert'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationAlert.ts:8:37: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationListener.ts:1:40: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationListener.ts:5:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationListener.ts:6:30: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:1:24: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:2:29: Cannot find module '@ng-app-framework/alert'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:3:27: Cannot find module '@ng-app-framework/api'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:4:29: Cannot find module '@ng-app-framework/oauth'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:5:28: Cannot find module '@ng-app-framework/safe'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:12:28: Cannot find module '@ng-app-framework/core'.
+Error: Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:1:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:5:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:7:21: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:8:20: Cannot find module '@ng-app-framework/validation'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:9:24: Cannot find module '@ng-app-framework/api'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:10:35: Cannot find module '@ng-app-framework/oauth'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/NotificationsEndpoint.ts:23:21: Property 'request' does not exist on type 'NotificationsEndpoint'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Structure/ActiveToast.ts:1:24: Cannot find module 'ngx-toastr'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Structure/ActiveToast.ts:2:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationFormatter.ts:2:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationFormatter.ts:3:34: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:1:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:2:24: Cannot find module '@ng-app-framework/api'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:3:35: Cannot find module '@ng-app-framework/oauth'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:4:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Endpoint/MarkNotificationAsReadEndpoint.ts:16:21: Property 'request' does not exist on type 'MarkNotificationAsReadEndpoint'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationApi.ts:1:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationApi.ts:5:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationAlert.ts:1:26: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationAlert.ts:2:26: Cannot find module '@ng-app-framework/alert'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationAlert.ts:8:37: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationListener.ts:1:40: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationListener.ts:5:26: Cannot find module 'rxjs/Rx'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/Service/NotificationListener.ts:6:30: Cannot find module '@ng-app-framework/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:1:24: Cannot find module '@angular/core'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:2:29: Cannot find module '@ng-app-framework/alert'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:3:27: Cannot find module '@ng-app-framework/api'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:4:29: Cannot find module '@ng-app-framework/oauth'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:5:28: Cannot find module '@ng-app-framework/safe'.
+Error at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/.ng_pkg_build/@ng-app-framework-notification/ts/src/lib/NgNotificationModule.ts:12:28: Cannot find module '@ng-app-framework/core'.
+    at new UserError (/Users/justin/.nvm/versions/node/v7.10.0/lib/node_modules/ng-packagr/node_modules/@angular/tsc-wrapped/src/tsc.js:27:28)
+    at check (/Users/justin/.nvm/versions/node/v7.10.0/lib/node_modules/ng-packagr/node_modules/@angular/tsc-wrapped/src/tsc.js:93:15)
+    at Tsc.typeCheck (/Users/justin/.nvm/versions/node/v7.10.0/lib/node_modules/ng-packagr/node_modules/@angular/tsc-wrapped/src/tsc.js:173:9)
+    at /Users/justin/.nvm/versions/node/v7.10.0/lib/node_modules/ng-packagr/node_modules/@angular/tsc-wrapped/src/main.js:122:23
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 111
+npm ERR! @ng-app-framework/notification@1.1.8 package: `node --max-old-space-size=8192 `which ng-packagr` && cp -r ./public/ ./dist/public`
+npm ERR! Exit status 111
+npm ERR! 
+npm ERR! Failed at the @ng-app-framework/notification@1.1.8 package script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/justin/.npm/_logs/2017-12-14T15_03_44_686Z-debug.log
+npm ERR! publish Failed PUT 403
+npm ERR! code E403
+npm ERR! You do not have permission to publish "dist". Are you logged in as the correct user? : dist
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/justin/.npm/_logs/2017-12-14T15_03_50_497Z-debug.log
+--- dependency-level-5/notification: Pushing version change
+To https://github.com/ng-app-framework/notification.git
+   d6f7f77..dd06aaa  master -> master
+--- dependency-level-5/notification: Update Complete!
+--- dependency-level-5/notification: Changing Directories
+--- dependency-level-5/notification: Running npm update --save
+
+> fsevents@1.1.3 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents
+> node install
+
+[fsevents] Success: "/Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents/lib/binding/Release/node-v51-darwin-x64/fse.node" is installed via remote
+
+> node-sass@4.7.2 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /Users/justin/.npm/node-sass/4.7.2/darwin-x64-51_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/webpack/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.7.2 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass/vendor/darwin-x64-51/binding.node
+Testing binary
+Binary is fine
+npm WARN @ng-app-framework/notification@1.1.8 No repository field.
+
++ bootstrap@3.3.7
++ font-awesome@4.7.0
++ jquery@3.2.1
++ popper.js@1.13.0
++ ngx-toastr@8.0.0
++ @angular/core@5.1.1
++ tether@1.4.3
++ rxjs@5.5.5
++ @ng-app-framework/api@1.1.9
++ @angular/common@5.1.1
++ @angular/forms@5.1.1
++ @ng-app-framework/core@1.1.7
++ @ng-app-framework/oauth@1.1.7
++ @ng-app-framework/alert@1.1.9
++ @ng-app-framework/safe@1.1.9
+added 1273 packages in 22.593s
+--- dependency-level-5/notification: Done updating npm!
+--- dependency-level-5/notification: Committing files
+The following paths are ignored by one of your .gitignore files:
+node_modules
+Use -f if you really want to add them.
+[master f196171] Updating module
+ 1 file changed, 15 insertions(+), 17 deletions(-)
+--- dependency-level-5/notification: Updating NPM package
+v1.1.9
+
+> @ng-app-framework/notification@1.1.9 package /Users/justin/Angular/ng-app-framework/dependency-level-5/notification
+> node --max-old-space-size=8192 `which ng-packagr` && cp -r ./public/ ./dist/public
+
+Building Angular library
+Generating bundle for @ng-app-framework/notification
+Cleaning bundle build directory
+Processing assets
+Running ngc
+Compiling to FESM15
+'default' is not exported by 'node_modules/rxjs/add/operator/toPromise.js'
+Compiling to FESM5
+Compiling to UMD
+Minifying UMD bundle
+Dropping side-effect-free statement [0:3307,17]
+Dropping side-effect-free statement [0:24925,17]
+Dropping side-effect-free statement [0:47955,17]
+Dropping side-effect-free statement [0:69749,17]
+Dropping side-effect-free statement [0:92293,17]
+Dropping side-effect-free statement [0:114378,17]
+Dropping side-effect-free statement [0:136052,17]
+Dropping side-effect-free statement [0:157865,17]
+Dropping side-effect-free statement [0:179499,17]
+Dropping side-effect-free statement [0:202793,17]
+Dropping side-effect-free statement [0:224411,17]
+Dropping side-effect-free statement [0:247441,17]
+Dropping side-effect-free statement [0:269235,17]
+Dropping side-effect-free statement [0:291929,17]
+Dropping side-effect-free statement [0:313723,17]
+Dropping side-effect-free statement [0:335530,17]
+Dropping side-effect-free statement [0:357148,17]
+Dropping side-effect-free statement [0:3812,21]
+Dropping side-effect-free statement [0:5495,17]
+Dropping side-effect-free statement [0:6659,21]
+Dropping duplicated definition of variable a2374 [0:7087,16]
+Dropping duplicated definition of variable a2373 [0:7094,17]
+Side effects in initialization of unused variable a6504 [0:19973,53]
+Side effects in initialization of unused variable a6505 [0:19973,89]
+Side effects in initialization of unused variable a6506 [0:19973,131]
+Dropping duplicated definition of variable a7164 [0:21850,17]
+Dropping side-effect-free statement [0:25430,21]
+Dropping side-effect-free statement [0:27113,17]
+Dropping side-effect-free statement [0:28277,21]
+Dropping duplicated definition of variable a9458 [0:28705,16]
+Dropping duplicated definition of variable a9457 [0:28712,17]
+Side effects in initialization of unused variable a13588 [0:41591,53]
+Side effects in initialization of unused variable a13589 [0:41591,89]
+Side effects in initialization of unused variable a13590 [0:41591,131]
+Dropping duplicated definition of variable a14248 [0:43468,17]
+Dropping duplicated definition of variable a14890 [0:45236,16]
+Dropping duplicated definition of variable a14933 [0:45340,20]
+Dropping duplicated definition of variable a14934 [0:45344,16]
+Dropping duplicated definition of variable a14933 [0:45346,20]
+Dropping duplicated definition of variable a14933 [0:45354,20]
+Dropping side-effect-free statement [0:48460,21]
+Dropping side-effect-free statement [0:50143,17]
+Dropping side-effect-free statement [0:51307,21]
+Dropping duplicated definition of variable a17042 [0:51735,16]
+Dropping duplicated definition of variable a17041 [0:51742,17]
+Side effects in initialization of unused variable a21172 [0:64621,53]
+Side effects in initialization of unused variable a21173 [0:64621,89]
+Side effects in initialization of unused variable a21174 [0:64621,131]
+Dropping duplicated definition of variable a21832 [0:66498,17]
+Dropping side-effect-free statement [0:70254,21]
+Dropping side-effect-free statement [0:71937,17]
+Dropping side-effect-free statement [0:73101,21]
+Dropping duplicated definition of variable a24175 [0:73529,16]
+Dropping duplicated definition of variable a24174 [0:73536,17]
+Side effects in initialization of unused variable a28305 [0:86415,53]
+Side effects in initialization of unused variable a28306 [0:86415,89]
+Side effects in initialization of unused variable a28307 [0:86415,131]
+Dropping duplicated definition of variable a28965 [0:88292,17]
+Dropping side-effect-free statement [0:92798,21]
+Dropping side-effect-free statement [0:94481,17]
+Dropping side-effect-free statement [0:95645,21]
+Dropping duplicated definition of variable a31607 [0:96073,16]
+Dropping duplicated definition of variable a31606 [0:96080,17]
+Side effects in initialization of unused variable a35737 [0:108959,53]
+Side effects in initialization of unused variable a35738 [0:108959,89]
+Side effects in initialization of unused variable a35739 [0:108959,131]
+Dropping duplicated definition of variable a36397 [0:110836,17]
+Dropping side-effect-free statement [0:114883,21]
+Dropping side-effect-free statement [0:116566,17]
+Dropping side-effect-free statement [0:117730,21]
+Dropping duplicated definition of variable a38834 [0:118158,16]
+Dropping duplicated definition of variable a38833 [0:118165,17]
+Side effects in initialization of unused variable a42964 [0:131044,53]
+Side effects in initialization of unused variable a42965 [0:131044,89]
+Side effects in initialization of unused variable a42966 [0:131044,131]
+Dropping duplicated definition of variable a43624 [0:132921,17]
+Dropping side-effect-free statement [0:136557,21]
+Dropping side-effect-free statement [0:138240,17]
+Dropping side-effect-free statement [0:139404,21]
+Dropping duplicated definition of variable a45930 [0:139832,16]
+Dropping duplicated definition of variable a45929 [0:139839,17]
+Side effects in initialization of unused variable a50060 [0:152718,53]
+Side effects in initialization of unused variable a50061 [0:152718,89]
+Side effects in initialization of unused variable a50062 [0:152718,131]
+Dropping duplicated definition of variable a50720 [0:154595,17]
+Dropping side-effect-free statement [0:158370,21]
+Dropping side-effect-free statement [0:160053,17]
+Dropping side-effect-free statement [0:161217,21]
+Dropping duplicated definition of variable a53078 [0:161645,16]
+Dropping duplicated definition of variable a53077 [0:161652,17]
+Side effects in initialization of unused variable a57208 [0:174531,53]
+Side effects in initialization of unused variable a57209 [0:174531,89]
+Side effects in initialization of unused variable a57210 [0:174531,131]
+Dropping duplicated definition of variable a57868 [0:176408,17]
+Dropping side-effect-free statement [0:180004,21]
+Dropping side-effect-free statement [0:181687,17]
+Dropping side-effect-free statement [0:182851,21]
+Dropping duplicated definition of variable a60169 [0:183279,16]
+Dropping duplicated definition of variable a60168 [0:183286,17]
+Side effects in initialization of unused variable a64299 [0:196165,53]
+Side effects in initialization of unused variable a64300 [0:196165,89]
+Side effects in initialization of unused variable a64301 [0:196165,131]
+Dropping duplicated definition of variable a64959 [0:198042,17]
+Dropping duplicated definition of variable a65607 [0:199820,16]
+Dropping duplicated definition of variable a65650 [0:199924,20]
+Dropping duplicated definition of variable a65651 [0:199928,16]
+Dropping duplicated definition of variable a65650 [0:199930,20]
+Dropping duplicated definition of variable a65650 [0:199938,20]
+Dropping side-effect-free statement [0:203298,21]
+Dropping side-effect-free statement [0:204981,17]
+Dropping side-effect-free statement [0:206145,21]
+Dropping duplicated definition of variable a67856 [0:206573,16]
+Dropping duplicated definition of variable a67855 [0:206580,17]
+Side effects in initialization of unused variable a71986 [0:219459,53]
+Side effects in initialization of unused variable a71987 [0:219459,89]
+Side effects in initialization of unused variable a71988 [0:219459,131]
+Dropping duplicated definition of variable a72646 [0:221336,17]
+Dropping side-effect-free statement [0:224916,21]
+Dropping side-effect-free statement [0:226599,17]
+Dropping side-effect-free statement [0:227763,21]
+Dropping duplicated definition of variable a74940 [0:228191,16]
+Dropping duplicated definition of variable a74939 [0:228198,17]
+Side effects in initialization of unused variable a79070 [0:241077,53]
+Side effects in initialization of unused variable a79071 [0:241077,89]
+Side effects in initialization of unused variable a79072 [0:241077,131]
+Dropping duplicated definition of variable a79730 [0:242954,17]
+Dropping duplicated definition of variable a80372 [0:244722,16]
+Dropping duplicated definition of variable a80415 [0:244826,20]
+Dropping duplicated definition of variable a80416 [0:244830,16]
+Dropping duplicated definition of variable a80415 [0:244832,20]
+Dropping duplicated definition of variable a80415 [0:244840,20]
+Dropping side-effect-free statement [0:247946,21]
+Dropping side-effect-free statement [0:249629,17]
+Dropping side-effect-free statement [0:250793,21]
+Dropping duplicated definition of variable a82524 [0:251221,16]
+Dropping duplicated definition of variable a82523 [0:251228,17]
+Side effects in initialization of unused variable a86654 [0:264107,53]
+Side effects in initialization of unused variable a86655 [0:264107,89]
+Side effects in initialization of unused variable a86656 [0:264107,131]
+Dropping duplicated definition of variable a87314 [0:265984,17]
+Dropping side-effect-free statement [0:269740,21]
+Dropping side-effect-free statement [0:271423,17]
+Dropping side-effect-free statement [0:272587,21]
+Dropping duplicated definition of variable a89657 [0:273015,16]
+Dropping duplicated definition of variable a89656 [0:273022,17]
+Side effects in initialization of unused variable a93787 [0:285901,53]
+Side effects in initialization of unused variable a93788 [0:285901,89]
+Side effects in initialization of unused variable a93789 [0:285901,131]
+Dropping duplicated definition of variable a94447 [0:287778,17]
+Dropping side-effect-free statement [0:292434,21]
+Dropping side-effect-free statement [0:294117,17]
+Dropping side-effect-free statement [0:295281,21]
+Dropping duplicated definition of variable a97120 [0:295709,16]
+Dropping duplicated definition of variable a97119 [0:295716,17]
+Side effects in initialization of unused variable a101250 [0:308595,53]
+Side effects in initialization of unused variable a101251 [0:308595,89]
+Side effects in initialization of unused variable a101252 [0:308595,131]
+Dropping duplicated definition of variable a101910 [0:310472,17]
+Dropping side-effect-free statement [0:314228,21]
+Dropping side-effect-free statement [0:315911,17]
+Dropping side-effect-free statement [0:317075,21]
+Dropping duplicated definition of variable a104253 [0:317503,16]
+Dropping duplicated definition of variable a104252 [0:317510,17]
+Side effects in initialization of unused variable a108383 [0:330389,53]
+Side effects in initialization of unused variable a108384 [0:330389,89]
+Side effects in initialization of unused variable a108385 [0:330389,131]
+Dropping duplicated definition of variable a109043 [0:332266,17]
+Dropping side-effect-free statement [0:336035,21]
+Dropping side-effect-free statement [0:337718,17]
+Dropping side-effect-free statement [0:338882,21]
+Dropping duplicated definition of variable a111404 [0:339310,16]
+Dropping duplicated definition of variable a111403 [0:339317,17]
+Side effects in initialization of unused variable a115534 [0:352196,53]
+Side effects in initialization of unused variable a115535 [0:352196,89]
+Side effects in initialization of unused variable a115536 [0:352196,131]
+Dropping duplicated definition of variable a116194 [0:354073,17]
+Dropping side-effect-free statement [0:357653,21]
+Dropping side-effect-free statement [0:359336,17]
+Dropping side-effect-free statement [0:360500,21]
+Dropping duplicated definition of variable a118488 [0:360928,16]
+Dropping duplicated definition of variable a118487 [0:360935,17]
+Side effects in initialization of unused variable a122618 [0:373814,53]
+Side effects in initialization of unused variable a122619 [0:373814,89]
+Side effects in initialization of unused variable a122620 [0:373814,131]
+Dropping duplicated definition of variable a123278 [0:375691,17]
+Dropping duplicated definition of variable a123921 [0:377452,16]
+Dropping duplicated definition of variable a123964 [0:377556,20]
+Dropping duplicated definition of variable a123965 [0:377560,16]
+Dropping duplicated definition of variable a123964 [0:377562,20]
+Dropping duplicated definition of variable a123964 [0:377570,20]
+Dropping duplicated definition of variable a10 [0:67,4]
+Dropping duplicated definition of variable a347 [0:850,4]
+Side effects in initialization of unused variable a555 [0:1389,4]
+Side effects in initialization of unused variable a556 [0:1390,4]
+Side effects in initialization of unused variable a644 [0:1697,4]
+Side effects in initialization of unused variable a645 [0:1698,4]
+Side effects in initialization of unused variable a646 [0:1699,4]
+Dropping duplicated definition of variable a347 [0:2106,4]
+Side effects in initialization of unused variable a1137 [0:3217,4]
+Side effects in initialization of unused variable a1138 [0:3218,4]
+Side effects in initialization of unused variable a1139 [0:3219,4]
+Side effects in initialization of unused variable a5141 [0:15897,4]
+Side effects in initialization of unused variable a6521 [0:20001,4]
+Side effects in initialization of unused variable a6522 [0:20002,4]
+Side effects in initialization of unused variable a7357 [0:22260,4]
+Side effects in initialization of unused variable a7504 [0:22636,4]
+Side effects in initialization of unused variable a7505 [0:22637,4]
+Side effects in initialization of unused variable a__rxSubscriber [0:22651,4]
+Side effects in initialization of unused variable a__observable [0:22651,4]
+Side effects in initialization of unused variable a__iterator [0:22651,4]
+Side effects in initialization of unused variable a7527 [0:22707,4]
+Side effects in initialization of unused variable a7638 [0:23007,4]
+Side effects in initialization of unused variable a7639 [0:23008,4]
+Side effects in initialization of unused variable a7727 [0:23315,4]
+Side effects in initialization of unused variable a7728 [0:23316,4]
+Side effects in initialization of unused variable a7729 [0:23317,4]
+Side effects in initialization of unused variable a8221 [0:24835,4]
+Side effects in initialization of unused variable a8222 [0:24836,4]
+Side effects in initialization of unused variable a8223 [0:24837,4]
+Side effects in initialization of unused variable a12225 [0:37515,4]
+Side effects in initialization of unused variable a13605 [0:41619,4]
+Side effects in initialization of unused variable a13606 [0:41620,4]
+Side effects in initialization of unused variable a14441 [0:43878,4]
+Side effects in initialization of unused variable a14588 [0:44254,4]
+Side effects in initialization of unused variable a14589 [0:44255,4]
+Side effects in initialization of unused variable a__rxSubscriber$0 [0:44271,4]
+Side effects in initialization of unused variable a__observable$0 [0:44271,4]
+Side effects in initialization of unused variable a__iterator$0 [0:44271,4]
+Side effects in initialization of unused variable a14629 [0:44362,4]
+Side effects in initialization of unused variable a14657 [0:44422,4]
+Side effects in initialization of unused variable a14674 [0:44461,4]
+Side effects in initialization of unused variable a14684 [0:44486,4]
+Side effects in initialization of unused variable a14694 [0:44511,4]
+Side effects in initialization of unused variable a14720 [0:44571,4]
+Side effects in initialization of unused variable a15222 [0:46037,4]
+Side effects in initialization of unused variable a15223 [0:46038,4]
+Side effects in initialization of unused variable a15311 [0:46345,4]
+Side effects in initialization of unused variable a15312 [0:46346,4]
+Side effects in initialization of unused variable a15313 [0:46347,4]
+Side effects in initialization of unused variable a15805 [0:47865,4]
+Side effects in initialization of unused variable a15806 [0:47866,4]
+Side effects in initialization of unused variable a15807 [0:47867,4]
+Side effects in initialization of unused variable a19809 [0:60545,4]
+Side effects in initialization of unused variable a21189 [0:64649,4]
+Side effects in initialization of unused variable a21190 [0:64650,4]
+Side effects in initialization of unused variable a22025 [0:66908,4]
+Side effects in initialization of unused variable a22172 [0:67284,4]
+Side effects in initialization of unused variable a22173 [0:67285,4]
+Side effects in initialization of unused variable a__rxSubscriber$1 [0:67301,4]
+Side effects in initialization of unused variable a__observable$1 [0:67301,4]
+Side effects in initialization of unused variable a__iterator$1 [0:67301,4]
+Side effects in initialization of unused variable a22355 [0:67831,4]
+Side effects in initialization of unused variable a22356 [0:67832,4]
+Side effects in initialization of unused variable a22444 [0:68139,4]
+Side effects in initialization of unused variable a22445 [0:68140,4]
+Side effects in initialization of unused variable a22446 [0:68141,4]
+Side effects in initialization of unused variable a22938 [0:69659,4]
+Side effects in initialization of unused variable a22939 [0:69660,4]
+Side effects in initialization of unused variable a22940 [0:69661,4]
+Side effects in initialization of unused variable a26942 [0:82339,4]
+Side effects in initialization of unused variable a28322 [0:86443,4]
+Side effects in initialization of unused variable a28323 [0:86444,4]
+Side effects in initialization of unused variable a29158 [0:88702,4]
+Side effects in initialization of unused variable a29305 [0:89078,4]
+Side effects in initialization of unused variable a29306 [0:89079,4]
+Side effects in initialization of unused variable a__rxSubscriber$2 [0:89093,4]
+Side effects in initialization of unused variable a__observable$2 [0:89093,4]
+Side effects in initialization of unused variable a__iterator$2 [0:89093,4]
+Side effects in initialization of unused variable a29328 [0:89149,4]
+Side effects in initialization of unused variable a29558 [0:89772,4]
+Dropping duplicated definition of variable a29571 [0:89836,4]
+Side effects in initialization of unused variable a29788 [0:90375,4]
+Side effects in initialization of unused variable a29789 [0:90376,4]
+Side effects in initialization of unused variable a29877 [0:90683,4]
+Side effects in initialization of unused variable a29878 [0:90684,4]
+Side effects in initialization of unused variable a29879 [0:90685,4]
+Dropping duplicated definition of variable a29571 [0:91092,4]
+Side effects in initialization of unused variable a30370 [0:92203,4]
+Side effects in initialization of unused variable a30371 [0:92204,4]
+Side effects in initialization of unused variable a30372 [0:92205,4]
+Side effects in initialization of unused variable a34374 [0:104883,4]
+Side effects in initialization of unused variable a35754 [0:108987,4]
+Side effects in initialization of unused variable a35755 [0:108988,4]
+Side effects in initialization of unused variable a36590 [0:111246,4]
+Side effects in initialization of unused variable a36737 [0:111622,4]
+Side effects in initialization of unused variable a36738 [0:111623,4]
+Side effects in initialization of unused variable a__rxSubscriber$3 [0:111637,4]
+Side effects in initialization of unused variable a__observable$3 [0:111637,4]
+Side effects in initialization of unused variable a__iterator$3 [0:111637,4]
+Side effects in initialization of unused variable a36740 [0:111642,4]
+Side effects in initialization of unused variable a36810 [0:111853,4]
+Side effects in initialization of unused variable a37014 [0:112460,4]
+Side effects in initialization of unused variable a37015 [0:112461,4]
+Side effects in initialization of unused variable a37103 [0:112768,4]
+Side effects in initialization of unused variable a37104 [0:112769,4]
+Side effects in initialization of unused variable a37105 [0:112770,4]
+Side effects in initialization of unused variable a37597 [0:114288,4]
+Side effects in initialization of unused variable a37598 [0:114289,4]
+Side effects in initialization of unused variable a37599 [0:114290,4]
+Side effects in initialization of unused variable a41601 [0:126968,4]
+Side effects in initialization of unused variable a42981 [0:131072,4]
+Side effects in initialization of unused variable a42982 [0:131073,4]
+Side effects in initialization of unused variable a43817 [0:133331,4]
+Side effects in initialization of unused variable a43964 [0:133707,4]
+Side effects in initialization of unused variable a43965 [0:133708,4]
+Side effects in initialization of unused variable a__rxSubscriber$4 [0:133722,4]
+Side effects in initialization of unused variable a__observable$4 [0:133722,4]
+Side effects in initialization of unused variable a__iterator$4 [0:133722,4]
+Side effects in initialization of unused variable a43987 [0:133778,4]
+Side effects in initialization of unused variable a44110 [0:134134,4]
+Side effects in initialization of unused variable a44111 [0:134135,4]
+Side effects in initialization of unused variable a44199 [0:134442,4]
+Side effects in initialization of unused variable a44200 [0:134443,4]
+Side effects in initialization of unused variable a44201 [0:134444,4]
+Side effects in initialization of unused variable a44693 [0:135962,4]
+Side effects in initialization of unused variable a44694 [0:135963,4]
+Side effects in initialization of unused variable a44695 [0:135964,4]
+Side effects in initialization of unused variable a48697 [0:148642,4]
+Side effects in initialization of unused variable a50077 [0:152746,4]
+Side effects in initialization of unused variable a50078 [0:152747,4]
+Side effects in initialization of unused variable a50913 [0:155005,4]
+Side effects in initialization of unused variable a51060 [0:155381,4]
+Side effects in initialization of unused variable a51061 [0:155382,4]
+Side effects in initialization of unused variable a__rxSubscriber$5 [0:155403,4]
+Side effects in initialization of unused variable a__observable$5 [0:155403,4]
+Side effects in initialization of unused variable a__iterator$5 [0:155403,4]
+Side effects in initialization of unused variable a51259 [0:155947,4]
+Side effects in initialization of unused variable a51260 [0:155948,4]
+Side effects in initialization of unused variable a51348 [0:156255,4]
+Side effects in initialization of unused variable a51349 [0:156256,4]
+Side effects in initialization of unused variable a51350 [0:156257,4]
+Dropping duplicated definition of variable a51065 [0:156664,4]
+Side effects in initialization of unused variable a51841 [0:157775,4]
+Side effects in initialization of unused variable a51842 [0:157776,4]
+Side effects in initialization of unused variable a51843 [0:157777,4]
+Side effects in initialization of unused variable a55845 [0:170455,4]
+Side effects in initialization of unused variable a57225 [0:174559,4]
+Side effects in initialization of unused variable a57226 [0:174560,4]
+Side effects in initialization of unused variable a58061 [0:176818,4]
+Side effects in initialization of unused variable a58208 [0:177194,4]
+Side effects in initialization of unused variable a58209 [0:177195,4]
+Side effects in initialization of unused variable a__rxSubscriber$6 [0:177209,4]
+Side effects in initialization of unused variable a__observable$6 [0:177209,4]
+Side effects in initialization of unused variable a__iterator$6 [0:177209,4]
+Side effects in initialization of unused variable a58231 [0:177265,4]
+Side effects in initialization of unused variable a58349 [0:177581,4]
+Side effects in initialization of unused variable a58350 [0:177582,4]
+Side effects in initialization of unused variable a58438 [0:177889,4]
+Side effects in initialization of unused variable a58439 [0:177890,4]
+Side effects in initialization of unused variable a58440 [0:177891,4]
+Side effects in initialization of unused variable a58932 [0:179409,4]
+Side effects in initialization of unused variable a58933 [0:179410,4]
+Side effects in initialization of unused variable a58934 [0:179411,4]
+Side effects in initialization of unused variable a62936 [0:192089,4]
+Side effects in initialization of unused variable a64316 [0:196193,4]
+Side effects in initialization of unused variable a64317 [0:196194,4]
+Side effects in initialization of unused variable a65152 [0:198452,4]
+Side effects in initialization of unused variable a65299 [0:198828,4]
+Side effects in initialization of unused variable a65300 [0:198829,4]
+Side effects in initialization of unused variable a__rxSubscriber$7 [0:198845,4]
+Side effects in initialization of unused variable a__observable$7 [0:198845,4]
+Side effects in initialization of unused variable a__iterator$7 [0:198845,4]
+Side effects in initialization of unused variable a65340 [0:198936,4]
+Side effects in initialization of unused variable a65368 [0:198996,4]
+Side effects in initialization of unused variable a65385 [0:199035,4]
+Side effects in initialization of unused variable a65395 [0:199060,4]
+Dropping duplicated definition of variable a65829 [0:200336,4]
+Side effects in initialization of unused variable a66037 [0:200875,4]
+Side effects in initialization of unused variable a66038 [0:200876,4]
+Side effects in initialization of unused variable a66126 [0:201183,4]
+Side effects in initialization of unused variable a66127 [0:201184,4]
+Side effects in initialization of unused variable a66128 [0:201185,4]
+Dropping duplicated definition of variable a65829 [0:201592,4]
+Side effects in initialization of unused variable a66619 [0:202703,4]
+Side effects in initialization of unused variable a66620 [0:202704,4]
+Side effects in initialization of unused variable a66621 [0:202705,4]
+Side effects in initialization of unused variable a70623 [0:215383,4]
+Side effects in initialization of unused variable a72003 [0:219487,4]
+Side effects in initialization of unused variable a72004 [0:219488,4]
+Side effects in initialization of unused variable a72839 [0:221746,4]
+Side effects in initialization of unused variable a72986 [0:222122,4]
+Side effects in initialization of unused variable a72987 [0:222123,4]
+Side effects in initialization of unused variable a__rxSubscriber$8 [0:222137,4]
+Side effects in initialization of unused variable a__observable$8 [0:222137,4]
+Side effects in initialization of unused variable a__iterator$8 [0:222137,4]
+Side effects in initialization of unused variable a73009 [0:222193,4]
+Side effects in initialization of unused variable a73120 [0:222493,4]
+Side effects in initialization of unused variable a73121 [0:222494,4]
+Side effects in initialization of unused variable a73209 [0:222801,4]
+Side effects in initialization of unused variable a73210 [0:222802,4]
+Side effects in initialization of unused variable a73211 [0:222803,4]
+Side effects in initialization of unused variable a73703 [0:224321,4]
+Side effects in initialization of unused variable a73704 [0:224322,4]
+Side effects in initialization of unused variable a73705 [0:224323,4]
+Side effects in initialization of unused variable a77707 [0:237001,4]
+Side effects in initialization of unused variable a79087 [0:241105,4]
+Side effects in initialization of unused variable a79088 [0:241106,4]
+Side effects in initialization of unused variable a79923 [0:243364,4]
+Side effects in initialization of unused variable a80070 [0:243740,4]
+Side effects in initialization of unused variable a80071 [0:243741,4]
+Side effects in initialization of unused variable a__rxSubscriber$9 [0:243757,4]
+Side effects in initialization of unused variable a__observable$9 [0:243757,4]
+Side effects in initialization of unused variable a__iterator$9 [0:243757,4]
+Side effects in initialization of unused variable a80111 [0:243848,4]
+Side effects in initialization of unused variable a80139 [0:243908,4]
+Side effects in initialization of unused variable a80156 [0:243947,4]
+Side effects in initialization of unused variable a80166 [0:243972,4]
+Side effects in initialization of unused variable a80176 [0:243997,4]
+Side effects in initialization of unused variable a80202 [0:244057,4]
+Side effects in initialization of unused variable a80704 [0:245523,4]
+Side effects in initialization of unused variable a80705 [0:245524,4]
+Side effects in initialization of unused variable a80793 [0:245831,4]
+Side effects in initialization of unused variable a80794 [0:245832,4]
+Side effects in initialization of unused variable a80795 [0:245833,4]
+Side effects in initialization of unused variable a81287 [0:247351,4]
+Side effects in initialization of unused variable a81288 [0:247352,4]
+Side effects in initialization of unused variable a81289 [0:247353,4]
+Side effects in initialization of unused variable a85291 [0:260031,4]
+Side effects in initialization of unused variable a86671 [0:264135,4]
+Side effects in initialization of unused variable a86672 [0:264136,4]
+Side effects in initialization of unused variable a87507 [0:266394,4]
+Side effects in initialization of unused variable a87654 [0:266770,4]
+Side effects in initialization of unused variable a87655 [0:266771,4]
+Side effects in initialization of unused variable a__rxSubscriber$10 [0:266787,4]
+Side effects in initialization of unused variable a__observable$10 [0:266787,4]
+Side effects in initialization of unused variable a__iterator$10 [0:266787,4]
+Side effects in initialization of unused variable a87837 [0:267317,4]
+Side effects in initialization of unused variable a87838 [0:267318,4]
+Side effects in initialization of unused variable a87926 [0:267625,4]
+Side effects in initialization of unused variable a87927 [0:267626,4]
+Side effects in initialization of unused variable a87928 [0:267627,4]
+Side effects in initialization of unused variable a88420 [0:269145,4]
+Side effects in initialization of unused variable a88421 [0:269146,4]
+Side effects in initialization of unused variable a88422 [0:269147,4]
+Side effects in initialization of unused variable a92424 [0:281825,4]
+Side effects in initialization of unused variable a93804 [0:285929,4]
+Side effects in initialization of unused variable a93805 [0:285930,4]
+Side effects in initialization of unused variable a94640 [0:288188,4]
+Side effects in initialization of unused variable a94787 [0:288564,4]
+Side effects in initialization of unused variable a94788 [0:288565,4]
+Side effects in initialization of unused variable a__rxSubscriber$11 [0:288579,4]
+Side effects in initialization of unused variable a__observable$11 [0:288579,4]
+Side effects in initialization of unused variable a__iterator$11 [0:288579,4]
+Side effects in initialization of unused variable a94810 [0:288635,4]
+Side effects in initialization of unused variable a95040 [0:289258,4]
+Side effects in initialization of unused variable a95158 [0:289603,4]
+Side effects in initialization of unused variable a95300 [0:290011,4]
+Side effects in initialization of unused variable a95301 [0:290012,4]
+Side effects in initialization of unused variable a95389 [0:290319,4]
+Side effects in initialization of unused variable a95390 [0:290320,4]
+Side effects in initialization of unused variable a95391 [0:290321,4]
+Side effects in initialization of unused variable a95883 [0:291839,4]
+Side effects in initialization of unused variable a95884 [0:291840,4]
+Side effects in initialization of unused variable a95885 [0:291841,4]
+Side effects in initialization of unused variable a99887 [0:304519,4]
+Side effects in initialization of unused variable a101267 [0:308623,4]
+Side effects in initialization of unused variable a101268 [0:308624,4]
+Side effects in initialization of unused variable a102103 [0:310882,4]
+Side effects in initialization of unused variable a102250 [0:311258,4]
+Side effects in initialization of unused variable a102251 [0:311259,4]
+Side effects in initialization of unused variable a__rxSubscriber$12 [0:311275,4]
+Side effects in initialization of unused variable a__observable$12 [0:311275,4]
+Side effects in initialization of unused variable a__iterator$12 [0:311275,4]
+Side effects in initialization of unused variable a102433 [0:311805,4]
+Side effects in initialization of unused variable a102434 [0:311806,4]
+Side effects in initialization of unused variable a102522 [0:312113,4]
+Side effects in initialization of unused variable a102523 [0:312114,4]
+Side effects in initialization of unused variable a102524 [0:312115,4]
+Side effects in initialization of unused variable a103016 [0:313633,4]
+Side effects in initialization of unused variable a103017 [0:313634,4]
+Side effects in initialization of unused variable a103018 [0:313635,4]
+Side effects in initialization of unused variable a107020 [0:326313,4]
+Side effects in initialization of unused variable a108400 [0:330417,4]
+Side effects in initialization of unused variable a108401 [0:330418,4]
+Side effects in initialization of unused variable a109236 [0:332676,4]
+Side effects in initialization of unused variable a109383 [0:333052,4]
+Side effects in initialization of unused variable a109384 [0:333053,4]
+Side effects in initialization of unused variable a__rxSubscriber$13 [0:333067,4]
+Side effects in initialization of unused variable a__observable$13 [0:333067,4]
+Side effects in initialization of unused variable a__iterator$13 [0:333067,4]
+Side effects in initialization of unused variable a109585 [0:333612,4]
+Side effects in initialization of unused variable a109586 [0:333613,4]
+Side effects in initialization of unused variable a109674 [0:333920,4]
+Side effects in initialization of unused variable a109675 [0:333921,4]
+Side effects in initialization of unused variable a109676 [0:333922,4]
+Dropping duplicated definition of variable a109407 [0:334329,4]
+Side effects in initialization of unused variable a110167 [0:335440,4]
+Side effects in initialization of unused variable a110168 [0:335441,4]
+Side effects in initialization of unused variable a110169 [0:335442,4]
+Side effects in initialization of unused variable a114171 [0:348120,4]
+Side effects in initialization of unused variable a115551 [0:352224,4]
+Side effects in initialization of unused variable a115552 [0:352225,4]
+Side effects in initialization of unused variable a116387 [0:354483,4]
+Side effects in initialization of unused variable a116534 [0:354859,4]
+Side effects in initialization of unused variable a116535 [0:354860,4]
+Side effects in initialization of unused variable a__rxSubscriber$14 [0:354874,4]
+Side effects in initialization of unused variable a__observable$14 [0:354874,4]
+Side effects in initialization of unused variable a__iterator$14 [0:354874,4]
+Side effects in initialization of unused variable a116557 [0:354930,4]
+Side effects in initialization of unused variable a116668 [0:355230,4]
+Side effects in initialization of unused variable a116669 [0:355231,4]
+Side effects in initialization of unused variable a116757 [0:355538,4]
+Side effects in initialization of unused variable a116758 [0:355539,4]
+Side effects in initialization of unused variable a116759 [0:355540,4]
+Side effects in initialization of unused variable a117251 [0:357058,4]
+Side effects in initialization of unused variable a117252 [0:357059,4]
+Side effects in initialization of unused variable a117253 [0:357060,4]
+Side effects in initialization of unused variable a121255 [0:369738,4]
+Side effects in initialization of unused variable a122635 [0:373842,4]
+Side effects in initialization of unused variable a122636 [0:373843,4]
+Side effects in initialization of unused variable a123471 [0:376101,4]
+Side effects in initialization of unused variable a123618 [0:376477,4]
+Side effects in initialization of unused variable a123619 [0:376478,4]
+Side effects in initialization of unused variable a__rxSubscriber$15 [0:376494,4]
+Side effects in initialization of unused variable a__observable$15 [0:376494,4]
+Side effects in initialization of unused variable a__iterator$15 [0:376494,4]
+Side effects in initialization of unused variable a123659 [0:376585,4]
+Side effects in initialization of unused variable a123687 [0:376645,4]
+Side effects in initialization of unused variable a123704 [0:376684,4]
+Side effects in initialization of unused variable a123714 [0:376709,4]
+Side effects in initialization of unused variable a123724 [0:376734,4]
+Side effects in initialization of unused variable a123750 [0:376794,4]
+Remapping source maps
+Copying staged files
+Writing package metadata
+Built Angular bundle for @ng-app-framework/notification
+Built Angular library from /Users/justin/Angular/ng-app-framework/dependency-level-5/notification, written to /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/dist
++ @ng-app-framework/notification@1.1.9
+--- dependency-level-5/notification: Pushing version change
+To https://github.com/ng-app-framework/notification.git
+   dd06aaa..41bf677  master -> master
+--- dependency-level-5/notification: Update Complete!
+Must run suid root for multiuser support.
+Must run suid root for multiuser support.
+--- dependency-level-5/notification: Changing Directories
+--- dependency-level-5/notification: Pushing version change
+--- dependency-level-5/notification: Update Complete!
+--- dependency-level-5/notification: Changing Directories
+--- dependency-level-5/notification: Running npm install
+
+> fsevents@1.1.3 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents
+> node install
+
+[fsevents] Success: "/Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents/lib/binding/Release/node-v51-darwin-x64/fse.node" is installed via remote
+
+> node-sass@4.7.2 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /Users/justin/.npm/node-sass/4.7.2/darwin-x64-51_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/webpack/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.7.2 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass/vendor/darwin-x64-51/binding.node
+Testing binary
+Binary is fine
+added 1273 packages in 204.928s
+--- dependency-level-5/notification: Running npm update --save
++ @ng-app-framework/oauth@1.1.9
+updated 2 packages in 27.684s
+--- dependency-level-5/notification: Done updating npm!
+--- dependency-level-5/notification: Pushing version change
+--- dependency-level-5/notification: Update Complete!
+--- dependency-level-5/notification: Changing Directories
+--- dependency-level-5/notification: Running npm install
+
+> fsevents@1.1.3 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents
+> node install
+
+[fsevents] Success: "/Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents/lib/binding/Release/node-v51-darwin-x64/fse.node" is installed via remote
+
+> node-sass@4.7.2 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /Users/justin/.npm/node-sass/4.7.2/darwin-x64-51_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/webpack/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.7.2 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass/vendor/darwin-x64-51/binding.node
+Testing binary
+Binary is fine
+added 1273 packages in 45.737s
+--- dependency-level-5/notification: Running npm update --save
+--- dependency-level-5/notification: Done updating npm!
+--- dependency-level-5/notification: Pushing version change
+--- dependency-level-5/notification: Update Complete!
+--- dependency-level-5/notification: Changing Directories
+--- dependency-level-5/notification: Running npm install
+
+> fsevents@1.1.3 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents
+> node install
+
+[fsevents] Success: "/Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/fsevents/lib/binding/Release/node-v51-darwin-x64/fse.node" is installed via remote
+
+> node-sass@4.7.2 install /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /Users/justin/.npm/node-sass/4.7.2/darwin-x64-51_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/webpack/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.7.2 postinstall /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /Users/justin/Angular/ng-app-framework/dependency-level-5/notification/node_modules/node-sass/vendor/darwin-x64-51/binding.node
+Testing binary
+Binary is fine
+added 1273 packages in 21.371s
+--- dependency-level-5/notification: Running npm update --save
++ ajv@5.5.2
++ karma-coverage-istanbul-reporter@1.3.1
++ rxjs@5.5.6
++ @angular/compiler-cli@5.1.2
++ @angular/forms@5.1.2
++ @types/node@6.0.95
++ @angular/compiler@5.1.2
++ @angular/cli@1.6.2
++ @angular/platform-browser@5.1.2
++ @angular/platform-browser-dynamic@5.1.2
++ @angular/common@5.1.2
++ @angular/core@5.1.2
+added 2 packages, updated 20 packages and moved 1 package in 21.661s
+--- dependency-level-5/notification: Done updating npm!
+--- dependency-level-5/notification: Pushing version change
+--- dependency-level-5/notification: Update Complete!

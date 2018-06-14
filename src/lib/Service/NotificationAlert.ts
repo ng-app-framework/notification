@@ -23,12 +23,14 @@ export class NotificationAlert {
     notify(notification: ParsedNotificationStructure, throwOnFailure:boolean = false) {
         if (notification.hasOwnProperty('notificationLevel')) {
             if (Value.isProvided(NotificationTypes[notification.notificationLevel])) {
-                let alert = this.alertProxy[NotificationTypes[notification.notificationLevel]](
-                    this.formatter.getMessageHtml(notification.body),
-                    notification.title,
-                    this.getNotificationConfig()
-                );
-                this.markAsReadOnClose(alert, notification);
+                setTimeout(() => {
+                    let alert = this.alertProxy[NotificationTypes[notification.notificationLevel]](
+                        this.formatter.getMessageHtml(notification.body),
+                        notification.title,
+                        this.getNotificationConfig()
+                    );
+                    this.markAsReadOnClose(alert, notification);
+                })
                 return;
             }
             console.error(`The notification level '${notification.notificationLevel}' is not defined`);
